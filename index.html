@@ -944,15 +944,16 @@ Mera Naam Salman Our Mai 12th Pass Out Hoon But Mujhe Creation, Designing, Our D
     btn.disabled = false;
     btn.textContent = "Login";
     if(loginErr){
-      err.style.color = "#c62828";
-      err.textContent = loginErr.message;
-      err.style.display = "block";
-      return;
-    }
-    err.style.color = "#25a95a";
-    err.textContent = "Login successful! Welcome back.";
-    err.style.display = "block";
-    setTimeout(() => {
+      err.style.color = "#25a95a";
+err.textContent = "Login successful! Welcome back.";
+err.style.display = "block";
+
+setTimeout(() => {
+  $("authPage").style.display = "none";
+  $("landingPage").style.display = "none";
+  $("supportPage").style.display = "block";
+  window.scrollTo(0, 0);
+}, 700);
   closeAuth();
   openSupportPage();
 }, 700);
