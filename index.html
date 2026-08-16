@@ -475,16 +475,11 @@
 
     <div class="auth-animation" id="authAnimation">
       <div class="runner-track">
-        <div class="runner" id="runner">🏃‍♂️</div>
-        <div class="bag" id="bag">💼</div>
+        <div class="runner" id="runner">🏄</div>
+        <div class="bag" id="bag">👜</div>
         <div class="key-prop" id="keyProp">🔑</div>
         <div class="burst-pieces" id="burstPieces">
-          <span class="piece">💵</span>
-          <span class="piece">📄</span>
-          <span class="piece">👕</span>
-          <span class="piece">🧦</span>
-          <span class="piece">✨</span>
-          <span class="piece">📦</span>
+          <span class="piece">💥</span>
         </div>
       </div>
     </div>
@@ -559,7 +554,7 @@
 
   const creator = {
     name: "Salman Pathaan",
-    username: "Sallu_Ox",
+    username: "Hey_Salllu",
     bio: `Knowledge Comes A Cost Hey Guys
 Mera Naam Salman Our Mai 12th Pass Out Hoon But Mujhe Creation, Designing, Our Development, Mai Interest Hai But Na Mujhe Coding Aati Our Na Python Language Par Fir Bhi Sikh Raha Hoon`,
     profileImage: "https://ifcdrbvimiuxsimajwje.supabase.co/storage/v1/object/public/Profile%20URL/IMG_20260814_074647.jpg",
@@ -957,6 +952,10 @@ Mera Naam Salman Our Mai 12th Pass Out Hoon But Mujhe Creation, Designing, Our D
     err.style.color = "#25a95a";
     err.textContent = "Login successful! Welcome back.";
     err.style.display = "block";
+    setTimeout(() => {
+  closeAuth();
+  openSupportPage();
+}, 700);
   });
 
 
