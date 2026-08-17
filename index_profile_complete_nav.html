@@ -1,0 +1,1538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title id="pageTitle">Support My Creative Work</title>
+  <meta id="metaDescription" name="description" content="">
+  <meta property="og:type" content="website">
+  <meta property="og:title" id="ogTitle" content="">
+  <meta property="og:description" id="ogDescription" content="">
+  <meta property="og:image" id="ogImage" content="">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" id="twitterTitle" content="">
+  <meta name="twitter:description" id="twitterDescription" content="">
+  <meta name="twitter:image" id="twitterImage" content="">
+  <meta name="theme-color" content="#faf9f7">
+  <link id="canonical" rel="canonical" href="">
+  <style>
+    :root{--bg:#faf9f7;--card:#fff;--text:#171717;--muted:#737373;--border:#e8e5e0;--accent:#ffdd4a;--shadow:0 12px 35px rgba(0,0,0,.07);--radius:20px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at top,#fffdf7 0,var(--bg) 420px);color:var(--text);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;min-height:100vh}
+    button,input,textarea{font:inherit}button{cursor:pointer}a{text-decoration:none;color:inherit}
+    .header{padding:18px 16px}.header-inner{max-width:1080px;margin:auto;display:flex;justify-content:flex-end}.login{border:1px solid var(--border);background:#fff;padding:10px 17px;border-radius:999px;font-weight:700}
+    .page{width:min(100% - 20px,720px);margin:auto;padding-bottom:45px}.profile{text-align:center;padding:20px 0 30px}.avatar{width:106px;height:106px;border-radius:50%;object-fit:cover;border:5px solid #fff;box-shadow:0 8px 28px rgba(0,0,0,.12);background:#eee}.username{margin-top:12px;color:var(--muted);font-size:14px;font-weight:700}
+    h1{font-size:clamp(31px,7vw,48px);line-height:1.08;letter-spacing:-1.7px;margin:18px auto 10px;max-width:620px}.subtitle{margin:auto;color:var(--muted);font-size:16px;line-height:1.55;max-width:520px}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px;margin-bottom:18px}.title{font-size:21px;letter-spacing:-.5px;margin:0 0 13px}.coffee-title{font-weight:800;margin-bottom:15px}
+    .amounts{display:grid;grid-template-columns:repeat(4,1fr);gap:9px}.amount{min-height:52px;border:1px solid var(--border);background:#fff;border-radius:14px;font-weight:800;transition:.18s}.amount.active{background:var(--accent);border-color:var(--accent)}
+    .custom{display:none;margin-top:10px}.custom.show{display:block}.label{display:block;font-weight:750;font-size:14px;margin:17px 0 8px}.input,.textarea{width:100%;border:1px solid var(--border);border-radius:14px;padding:14px 15px;outline:none;background:#fff;color:var(--text)}.textarea{min-height:105px;resize:vertical}.input:focus,.textarea:focus{border-color:#aaa;box-shadow:0 0 0 4px rgba(255,221,74,.2)}
+    .monthly{display:flex;gap:12px;align-items:flex-start;margin-top:18px;padding:14px;background:#faf9f6;border:1px solid var(--border);border-radius:14px}.monthly input,.private input{width:18px;height:18px;margin-top:2px;accent-color:#111}.monthly strong{display:block;font-size:14px}.monthly small{display:block;color:var(--muted);line-height:1.4;margin-top:3px}
+    .private{display:flex;gap:9px;align-items:center;margin-top:14px;color:#555;font-size:14px}.video{margin-top:10px;border:1px dashed #d8d3ca;border-radius:13px;padding:12px;color:var(--muted);font-size:13px}
+    .error{display:none;color:#c62828;font-size:13px;margin-top:8px}.cta{width:100%;min-height:56px;margin-top:20px;border:0;border-radius:15px;background:#171717;color:#fff;font-weight:850;font-size:16px;transition:.2s}.cta:hover{transform:translateY(-2px);box-shadow:0 10px 25px rgba(0,0,0,.16)}
+    .bio{color:#555;line-height:1.75;white-space:pre-line;margin:0}.supporter{padding:15px 0;border-bottom:1px solid var(--border)}.supporter:last-child{border-bottom:0;padding-bottom:0}.supporter-name{font-weight:800;margin-bottom:4px}.supporter-message{color:var(--muted);font-size:14px;line-height:1.5}.empty{color:var(--muted);line-height:1.5}
+    .socials{display:flex;flex-wrap:wrap;gap:10px}.social{display:inline-flex;gap:8px;align-items:center;padding:11px 15px;border:1px solid var(--border);border-radius:999px;background:#fff;font-weight:700;font-size:14px}
+    footer{text-align:center;padding:25px 10px;color:var(--muted);font-size:13px;line-height:1.9}.footer-links{display:flex;justify-content:center;flex-wrap:wrap;gap:15px}
+    .backdrop{position:fixed;inset:0;background:rgba(0,0,0,.48);display:none;align-items:flex-end;justify-content:center;padding:12px;z-index:10}.backdrop.show{display:flex}.modal{width:min(100%,480px);background:#fff;border-radius:24px;padding:23px;box-shadow:0 25px 70px rgba(0,0,0,.25)}.modal h2{margin:0 0 8px}.modal p{color:var(--muted);line-height:1.55}.summary{background:#faf9f6;border:1px solid var(--border);border-radius:15px;padding:15px;margin:15px 0}.row{display:flex;justify-content:space-between;padding:5px 0;font-size:14px}.demo{border:1px dashed #d3cec4;border-radius:14px;padding:13px;color:var(--muted);font-size:13px}.actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:15px}.modal-btn{min-height:50px;border-radius:14px;border:1px solid var(--border);font-weight:800;background:#fff}.primary{background:#171717;color:#fff;border-color:#171717}.success{text-align:center;display:none}.success-icon{font-size:42px}.success p{color:var(--muted)}
+
+    /* ================= LANDING PAGE ================= */
+    .landing{
+      min-height:100svh;
+      position:relative;
+      overflow:hidden;
+      display:flex;
+      flex-direction:column;
+      background:#fffdf8;
+      isolation:isolate;
+    }
+    .landing-header{
+      width:min(100% - 32px,1080px);
+      margin:auto;
+      padding:22px 0;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      position:relative;
+      z-index:2;
+    }
+    .brand-mark{
+      width:42px;height:42px;
+      display:grid;place-items:center;
+      border-radius:13px;
+      background:#171717;color:#fff;
+      box-shadow:0 8px 22px rgba(0,0,0,.12);
+      font-size:20px;
+    }
+    .landing-login{
+      border:1px solid #e5e1d8;
+      background:rgba(255,255,255,.8);
+      backdrop-filter:blur(10px);
+      padding:10px 17px;
+      border-radius:999px;
+      font-weight:750;
+      color:#171717;
+    }
+    .landing-content{
+      width:min(100% - 32px,720px);
+      margin:auto;
+      text-align:center;
+      padding:20px 0 40px;
+      position:relative;
+      z-index:2;
+    }
+    .landing-avatar-wrap{
+      width:104px;height:104px;
+      margin:0 auto 18px;
+      position:relative;
+    }
+    .landing-avatar{
+      width:104px;height:104px;
+      border-radius:50%;
+      object-fit:cover;
+      border:5px solid #fff;
+      box-shadow:0 14px 38px rgba(0,0,0,.13);
+      background:#eee;
+    }
+    .online-dot{
+      position:absolute;
+      width:18px;height:18px;
+      right:3px;bottom:7px;
+      border:4px solid #fff;
+      border-radius:50%;
+      background:#25a95a;
+    }
+    .landing-badge{
+      display:inline-flex;
+      padding:7px 11px;
+      border-radius:999px;
+      background:#fff1b7;
+      color:#6d5700;
+      font-size:11px;
+      font-weight:850;
+      letter-spacing:.8px;
+      margin-bottom:14px;
+    }
+    .landing h1{
+      margin:0 auto;
+      max-width:720px;
+      font-size:clamp(38px,10vw,70px);
+      line-height:.98;
+      letter-spacing:-3px;
+    }
+    .landing h1 span{
+      display:block;
+    }
+    .landing-content > p{
+      max-width:560px;
+      margin:19px auto 0;
+      color:#6f6c66;
+      font-size:16px;
+      line-height:1.65;
+    }
+    .landing-actions{
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+      max-width:420px;
+      margin:27px auto 0;
+    }
+    .landing-primary,.landing-secondary{
+      min-height:56px;
+      border-radius:16px;
+      font-weight:850;
+      font-size:15px;
+      padding:0 20px;
+      transition:.2s ease;
+    }
+    .landing-primary{
+      border:0;
+      background:#171717;
+      color:#fff;
+      box-shadow:0 12px 28px rgba(0,0,0,.15);
+    }
+    .landing-secondary{
+      border:1px solid #e4e0d8;
+      background:#fff;
+      color:#171717;
+    }
+    .landing-primary:hover,.landing-secondary:hover{
+      transform:translateY(-2px);
+    }
+    .landing-trust{
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+      gap:12px;
+      margin-top:19px;
+      color:#8a877f;
+      font-size:12px;
+      font-weight:650;
+    }
+    .landing-bottom{
+      position:relative;
+      z-index:2;
+      padding:0 20px 22px;
+      text-align:center;
+      color:#a09c94;
+      font-size:12px;
+      display:flex;
+      justify-content:center;
+      gap:9px;
+    }
+    .landing-glow{
+      position:absolute;
+      border-radius:50%;
+      filter:blur(2px);
+      z-index:-1;
+      pointer-events:none;
+    }
+    .landing-glow-one{
+      width:330px;height:330px;
+      background:#fff1a6;
+      opacity:.42;
+      top:-150px;right:-130px;
+    }
+    .landing-glow-two{
+      width:280px;height:280px;
+      background:#ffe6c2;
+      opacity:.38;
+      bottom:-120px;left:-120px;
+    }
+    @media(min-width:700px){
+      .landing-header{padding-top:28px}
+      .landing-content{padding-top:40px}
+      .landing-actions{flex-direction:row;max-width:520px}
+      .landing-primary,.landing-secondary{flex:1}
+    }
+
+    @media(min-width:700px){.header{padding:24px 30px}.page{width:min(100% - 50px,720px)}.card{padding:28px}.backdrop{align-items:center}}
+    @media(max-width:420px){.amounts{grid-template-columns:repeat(2,1fr)}h1{font-size:32px}.card{padding:18px;border-radius:18px}}
+
+
+
+    /* ================= APP NAVIGATION + HOME ================= */
+    .menu-btn{
+      position:fixed;top:16px;left:16px;z-index:60;
+      width:46px;height:46px;border:1px solid var(--border);
+      border-radius:14px;background:rgba(255,255,255,.9);
+      backdrop-filter:blur(12px);box-shadow:0 8px 24px rgba(0,0,0,.08);
+      font-size:23px;font-weight:800;display:grid;place-items:center;
+    }
+    .menu-btn span{line-height:1}
+    .nav-backdrop{
+      position:fixed;inset:0;background:rgba(0,0,0,.35);z-index:70;
+      display:none;
+    }
+    .nav-backdrop.show{display:block}
+    .side-menu{
+      position:fixed;top:0;left:0;bottom:0;width:min(86vw,340px);
+      background:#fff;z-index:80;transform:translateX(-105%);
+      transition:transform .25s ease;box-shadow:18px 0 50px rgba(0,0,0,.15);
+      padding:20px 16px;overflow:auto;
+    }
+    .side-menu.show{transform:translateX(0)}
+    .menu-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:22px}
+    .menu-brand{display:flex;align-items:center;gap:11px;font-weight:900;font-size:18px}
+    .menu-close{border:1px solid var(--border);background:#fff;border-radius:12px;width:40px;height:40px;font-size:20px}
+    .menu-user{background:#faf9f6;border:1px solid var(--border);border-radius:16px;padding:14px;margin-bottom:14px}
+    .menu-user strong{display:block}
+    .menu-user small{display:block;color:var(--muted);margin-top:4px;word-break:break-all}
+    .nav-items{display:grid;gap:7px}
+    .nav-item{
+      width:100%;text-align:left;border:0;background:#fff;border-radius:13px;
+      padding:13px 14px;font-weight:750;font-size:15px;display:flex;gap:11px;align-items:center;
+    }
+    .nav-item:hover,.nav-item.active{background:#f3f0ea}
+    .nav-icon{width:24px;text-align:center;font-size:18px}
+    .nav-divider{height:1px;background:var(--border);margin:12px 0}
+    .menu-instagram{color:#b12a76}
+    .app-page{min-height:100svh;background:radial-gradient(circle at top,#fffdf7 0,var(--bg) 420px);padding:78px 16px 45px}
+    .app-shell{width:min(100%,720px);margin:auto}
+    .home-hero,.info-card,.settings-card{
+      background:#fff;border:1px solid var(--border);border-radius:var(--radius);
+      box-shadow:var(--shadow);padding:24px;margin-bottom:16px;
+    }
+    .home-hero{text-align:center;padding:30px 22px}
+    .home-avatar{width:92px;height:92px;border-radius:50%;object-fit:cover;border:4px solid #fff;box-shadow:0 10px 28px rgba(0,0,0,.12)}
+    .home-hero h1{font-size:clamp(30px,7vw,46px);margin:15px auto 9px}
+    .home-hero p{color:var(--muted);line-height:1.6;margin:0 auto;max-width:560px}
+    .home-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:20px}
+    .app-btn{min-height:52px;border-radius:14px;border:1px solid var(--border);background:#fff;font-weight:850}
+    .app-btn.primary{background:#171717;color:#fff;border-color:#171717}
+    .section-title{margin:0 0 14px;font-size:23px;letter-spacing:-.5px}
+    .info-row{display:flex;justify-content:space-between;gap:15px;padding:13px 0;border-bottom:1px solid var(--border)}
+    .info-row:last-child{border-bottom:0}
+    .info-label{color:var(--muted);font-size:14px}
+    .info-value{font-weight:800;text-align:right;word-break:break-word}
+    .setting-row{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:15px 0;border-bottom:1px solid var(--border)}
+    .setting-row:last-child{border-bottom:0}
+    .setting-copy strong{display:block}.setting-copy small{display:block;color:var(--muted);line-height:1.4;margin-top:3px}
+    .toggle{position:relative;width:48px;height:28px;flex:0 0 auto}
+    .toggle input{opacity:0;width:0;height:0}
+    .toggle-slider{position:absolute;inset:0;border-radius:999px;background:#ddd;transition:.2s}
+    .toggle-slider:before{content:"";position:absolute;width:22px;height:22px;left:3px;top:3px;border-radius:50%;background:#fff;box-shadow:0 2px 5px rgba(0,0,0,.15);transition:.2s}
+    .toggle input:checked + .toggle-slider{background:#171717}
+    .toggle input:checked + .toggle-slider:before{transform:translateX(20px)}
+    .select-setting{border:1px solid var(--border);background:#fff;border-radius:12px;padding:9px;font-weight:700}
+    .about-quote{font-size:20px;font-weight:850;line-height:1.4;margin:0 0 12px}
+    .about-text{color:#555;line-height:1.75;white-space:pre-line}
+    .contact-link{display:flex;align-items:center;gap:10px;padding:14px;border:1px solid var(--border);border-radius:14px;font-weight:800}
+    @media(max-width:420px){.home-actions{grid-template-columns:1fr}}
+
+    /* ================= ACCOUNT PROFILE ================= */
+    .profile-page{
+      min-height:100svh;
+      background:radial-gradient(circle at top,#fffdf7 0,var(--bg) 420px);
+      padding:18px 16px 45px;
+    }
+    .profile-shell{width:min(100%,560px);margin:auto}
+    .profile-top{
+      display:flex;align-items:center;justify-content:space-between;
+      margin-bottom:18px;
+    }
+    .profile-back{
+      border:1px solid var(--border);background:#fff;
+      padding:9px 15px;border-radius:999px;font-weight:700;
+    }
+    .account-card{
+      background:var(--card);border:1px solid var(--border);
+      border-radius:var(--radius);box-shadow:var(--shadow);padding:24px;
+    }
+    .account-avatar{
+      width:82px;height:82px;border-radius:50%;object-fit:cover;
+      border:4px solid #fff;box-shadow:0 8px 25px rgba(0,0,0,.12);
+      background:#eee;display:block;margin:0 auto 12px;
+    }
+    .account-title{text-align:center;margin:0;font-size:28px;letter-spacing:-1px}
+    .account-email{text-align:center;color:var(--muted);font-size:14px;margin:6px 0 22px}
+    .account-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .account-field{
+      border:1px solid var(--border);border-radius:14px;padding:13px;
+      background:#faf9f6;
+    }
+    .account-field.full{grid-column:1/-1}
+    .account-label{display:block;color:var(--muted);font-size:12px;font-weight:750;margin-bottom:5px}
+    .account-value{font-weight:800;word-break:break-word}
+    .account-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}
+    .account-btn{
+      min-height:50px;border:1px solid var(--border);border-radius:14px;
+      background:#fff;font-weight:800;
+    }
+    .account-btn.primary{background:#171717;color:#fff;border-color:#171717}
+    .account-edit{display:none;margin-top:18px;padding-top:18px;border-top:1px solid var(--border)}
+    .account-edit.show{display:block}
+    .account-message{display:none;font-size:13px;margin-top:10px;line-height:1.45}
+    .account-message.show{display:block}
+    @media(max-width:420px){
+      .account-grid{grid-template-columns:1fr}
+      .account-field.full{grid-column:auto}
+      .account-actions{grid-template-columns:1fr}
+    }
+
+    /* ================= AUTH PAGE ================= */
+    .auth-page{
+      min-height:100svh;
+      background:radial-gradient(circle at top,#fffdf7 0,var(--bg) 420px);
+      position:relative;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      overflow:hidden;
+    }
+    .auth-back{
+      position:absolute;
+      top:18px;left:16px;
+      border:1px solid var(--border);
+      background:#fff;
+      padding:9px 15px;
+      border-radius:999px;
+      font-weight:700;
+      font-size:14px;
+      z-index:5;
+    }
+    .auth-animation{
+      width:100%;
+      max-width:760px;
+      padding:0 10px;
+    }
+    .runner-track{
+      position:relative;
+      height:clamp(210px,54vw,340px);
+      overflow:hidden;
+    }
+    .runner{
+      position:absolute;
+      top:50%;
+      left:115%;
+      font-size:clamp(120px,34vw,220px);
+      transform:translate(-50%,-50%);
+      transition:left 1.2s linear;
+      filter:drop-shadow(0 14px 16px rgba(0,0,0,.15));
+      will-change:left,transform;
+      z-index:2;
+    }
+    .runner.pulling{animation:towBounce .45s ease-in-out infinite}
+    .runner.idle{animation:idleShake .5s ease-in-out infinite}
+    .runner.sprint{animation:sprintBounce .26s ease-in-out infinite}
+    @keyframes towBounce{
+      0%,100%{transform:translate(-50%,-50%) translateY(0) rotate(-5deg)}
+      50%{transform:translate(-50%,-50%) translateY(-6%) rotate(-9deg)}
+    }
+    @keyframes idleShake{
+      0%,100%{transform:translate(-50%,-50%) rotate(-3deg)}
+      50%{transform:translate(-50%,-50%) rotate(3deg)}
+    }
+    @keyframes sprintBounce{
+      0%,100%{transform:translate(-50%,-50%) translateY(0)}
+      50%{transform:translate(-50%,-50%) translateY(-11%)}
+    }
+    .bag{
+      position:absolute;
+      top:66%;
+      left:115%;
+      font-size:clamp(60px,16vw,100px);
+      transform:translate(-50%,-50%);
+      transition:left 1.2s linear;
+      will-change:left;
+      z-index:1;
+    }
+    .bag.opening{animation:bagWiggle .35s ease-in-out 2}
+    .bag.hidden{
+      opacity:0;
+      transform:translate(-50%,-50%) scale(.3);
+      transition:opacity .2s ease,transform .2s ease;
+    }
+    @keyframes bagWiggle{
+      0%,100%{transform:translate(-50%,-50%) rotate(0deg) scale(1)}
+      25%{transform:translate(-50%,-50%) rotate(-11deg) scale(1.06)}
+      75%{transform:translate(-50%,-50%) rotate(11deg) scale(1.06)}
+    }
+    .key-prop{
+      position:absolute;
+      top:40%;
+      left:50%;
+      font-size:clamp(28px,8vw,44px);
+      opacity:0;
+      transform:translate(-50%,-50%) scale(.4) rotate(-30deg);
+      transition:opacity .3s ease,transform .3s ease;
+      pointer-events:none;
+      z-index:3;
+    }
+    .key-prop.show{
+      opacity:1;
+      transform:translate(-50%,-50%) scale(1) rotate(12deg);
+    }
+    .burst-pieces{position:absolute;inset:0;pointer-events:none;z-index:1}
+    .piece{
+      position:absolute;
+      top:66%;left:50%;
+      font-size:clamp(28px,7vw,42px);
+      opacity:0;
+      transform:translate(-50%,-50%) scale(.3);
+      transition:transform .8s cubic-bezier(.2,.8,.3,1),opacity .8s ease;
+    }
+    .piece.fly{
+      opacity:1;
+      transform:translate(calc(-50% + var(--tx)),calc(-50% + var(--ty))) scale(1) rotate(var(--rot));
+    }
+    .piece.settle{transition:opacity .5s ease .6s;opacity:0}
+    .auth-form-wrap{
+      width:100%;
+      max-width:420px;
+      padding:0 16px;
+      opacity:0;
+      transform:translateY(14px);
+      pointer-events:none;
+      transition:opacity .45s ease, transform .45s ease;
+    }
+    .auth-form-wrap.show{
+      opacity:1;
+      transform:translateY(0);
+      pointer-events:auto;
+    }
+    .auth-card{
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:26px 24px;
+      text-align:center;
+    }
+    .auth-brand{margin:0 auto 16px}
+    .auth-tabs{
+      display:flex;
+      gap:8px;
+      background:#f2efe9;
+      border-radius:12px;
+      padding:4px;
+      margin-bottom:20px;
+    }
+    .auth-tab{
+      flex:1;
+      border:0;
+      background:transparent;
+      padding:10px;
+      border-radius:9px;
+      font-weight:750;
+      color:var(--muted);
+    }
+    .auth-tab.active{background:#fff;color:var(--text);box-shadow:0 2px 6px rgba(0,0,0,.06)}
+    .auth-form{text-align:left}
+    .auth-submit{margin-top:22px}
+    .auth-error{display:none;color:#c62828;font-size:13px;margin-top:8px;text-align:left}
+  </style>
+</head>
+<body>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu"><span>☰</span></button>
+  <div class="nav-backdrop" id="navBackdrop"></div>
+
+  <aside class="side-menu" id="sideMenu" aria-label="Main navigation">
+    <div class="menu-head">
+      <div class="menu-brand"><div class="brand-mark">☕</div><span id="menuBrandName">Salman</span></div>
+      <button class="menu-close" id="menuClose" aria-label="Close menu">×</button>
+    </div>
+
+    <div class="menu-user">
+      <strong id="menuUsername">Guest</strong>
+      <small id="menuEmail">Not logged in</small>
+    </div>
+
+    <nav class="nav-items">
+      <button class="nav-item active" data-nav="home"><span class="nav-icon">⌂</span>Home</button>
+      <button class="nav-item" data-nav="support"><span class="nav-icon">☕</span>Support</button>
+      <button class="nav-item" data-nav="profile"><span class="nav-icon">👤</span>Profile</button>
+      <button class="nav-item" data-nav="settings"><span class="nav-icon">⚙</span>Settings</button>
+      <button class="nav-item" data-nav="about"><span class="nav-icon">ⓘ</span>About me</button>
+      <button class="nav-item" data-nav="contact"><span class="nav-icon">✉</span>Contact info</button>
+    </nav>
+
+    <div class="nav-divider"></div>
+    <a class="nav-item menu-instagram" href="https://www.instagram.com/hey_salllu" target="_blank" rel="noopener">
+      <span class="nav-icon">◎</span>Instagram
+    </a>
+  </aside>
+
+  <section class="app-page" id="homePage" style="display:none">
+    <div class="app-shell">
+      <div class="home-hero">
+        <img class="home-avatar" id="homeAvatar" alt="">
+        <h1 id="homeTitle">Welcome</h1>
+        <p id="homeSubtitle">Your creator support space.</p>
+        <div class="home-actions">
+          <button class="app-btn primary" id="homeSupportBtn">☕ Support</button>
+          <button class="app-btn" id="homeProfileBtn">👤 My Profile</button>
+        </div>
+      </div>
+      <div class="info-card">
+        <h2 class="section-title">Quick access</h2>
+        <div class="info-row"><span class="info-label">Support</span><span class="info-value">Choose an amount and support the creator</span></div>
+        <div class="info-row"><span class="info-label">Profile</span><span class="info-value">Manage your account</span></div>
+        <div class="info-row"><span class="info-label">Settings</span><span class="info-value">Customize your experience</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="app-page" id="settingsPage" style="display:none">
+    <div class="app-shell">
+      <div class="settings-card">
+        <h2 class="section-title">Settings</h2>
+        <div class="setting-row">
+          <div class="setting-copy"><strong>Notifications</strong><small>Allow account and support updates.</small></div>
+          <label class="toggle"><input type="checkbox" id="settingNotifications" checked><span class="toggle-slider"></span></label>
+        </div>
+        <div class="setting-row">
+          <div class="setting-copy"><strong>Compact mode</strong><small>Use a tighter layout on supported screens.</small></div>
+          <label class="toggle"><input type="checkbox" id="settingCompact"><span class="toggle-slider"></span></label>
+        </div>
+        <div class="setting-row">
+          <div class="setting-copy"><strong>Language</strong><small>Choose the interface language.</small></div>
+          <select class="select-setting" id="settingLanguage"><option>English</option><option>Hindi</option></select>
+        </div>
+        <div class="setting-row">
+          <div class="setting-copy"><strong>Account security</strong><small>Change your password from your profile.</small></div>
+          <button class="app-btn" id="settingsPasswordBtn" style="min-height:42px;padding:0 12px">Password</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="app-page" id="aboutPage" style="display:none">
+    <div class="app-shell">
+      <div class="info-card">
+        <h2 class="section-title">About me</h2>
+        <p class="about-quote">“Make AI websites without a PC — using your daily device.”</p>
+        <p class="about-text" id="aboutMeText"></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="app-page" id="contactPage" style="display:none">
+    <div class="app-shell">
+      <div class="info-card">
+        <h2 class="section-title">Contact info</h2>
+        <p style="color:var(--muted);line-height:1.6">For updates, creator work and direct contact, find me on Instagram.</p>
+        <a class="contact-link" href="https://www.instagram.com/hey_salllu" target="_blank" rel="noopener">
+          <span>◎</span><span>@hey_salllu</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="landing" id="landingPage">
+    <div class="landing-glow landing-glow-one"></div>
+    <div class="landing-glow landing-glow-two"></div>
+    <header class="landing-header">
+      <div class="brand-mark">☕</div>
+      <button class="landing-login" id="landingLoginBtn">Login</button>
+    </header>
+
+    <main class="landing-content">
+      <div class="landing-avatar-wrap">
+        <img class="landing-avatar" id="landingAvatar" alt="">
+        <span class="online-dot" aria-hidden="true"></span>
+      </div>
+
+      <div class="landing-badge">CREATOR SUPPORT</div>
+
+      <h1 id="landingTitle"></h1>
+
+      <p id="landingBio"></p>
+
+      <div class="landing-actions">
+        <button class="landing-primary" id="startSupportBtn">
+          ☕ Support <span id="landingName"></span>
+        </button>
+        <button class="landing-secondary" id="landingInstagramBtn">
+          ◎ Instagram
+        </button>
+      </div>
+
+      <div class="landing-trust">
+        <span>✓ Simple</span>
+        <span>✓ Secure demo</span>
+        <span>✓ Creator-first</span>
+      </div>
+    </main>
+
+    <div class="landing-bottom">
+      <span>Support creative work</span>
+      <span>•</span>
+      <span>Made with ❤️</span>
+    </div>
+  </section>
+
+  <div id="supportPage" style="display:none">
+    <header class="header"><div class="header-inner"><button class="login" id="loginBtn">Profile</button></div></header>
+
+  <main class="page">
+    <section class="profile">
+      <img class="avatar" id="profileImage" alt="">
+      <div class="username" id="username"></div>
+      <h1 id="heading"></h1>
+      <p class="subtitle">It's a friendly way to support my creative work. ☕</p>
+    </section>
+
+    <section class="card">
+      <div class="coffee-title">☕ Choose your support</div>
+      <div class="amounts">
+        <button class="amount" data-amount="99">₹99</button>
+        <button class="amount" data-amount="149">₹149</button>
+        <button class="amount active" data-amount="399">₹399</button>
+        <button class="amount" data-amount="999">₹999</button>
+      </div>
+
+      <label class="label" for="supporterName">Name or @yoursocial</label>
+      <input class="input" id="supporterName" maxlength="60" placeholder="Name or @yoursocial" autocomplete="name">
+
+      <label class="label" for="message">Message</label>
+      <textarea class="textarea" id="message" maxlength="500" placeholder="Say something nice..."></textarea>
+      <div class="video">🎥 <strong>Add a video message</strong><br>Video uploads can be connected later through your preferred storage service.</div>
+
+      <label class="private"><input type="checkbox" id="privateMessage"><span>Make this message private</span></label>
+
+      <label class="monthly">
+        <input type="checkbox" id="monthly">
+        <span><strong>Make this monthly</strong><small id="monthlyText">Support the creator every month. Cancel anytime.</small></span>
+      </label>
+
+      <div class="error" id="error"></div>
+      <button class="cta" id="supportBtn">Support ₹399</button>
+    </section>
+
+    <section class="card">
+      <h2 class="title" id="aboutTitle"></h2>
+      <p class="bio" id="bio"></p>
+    </section>
+
+    <section class="card">
+      <h2 class="title">Recent supporters</h2>
+      <div id="supporters"></div>
+    </section>
+
+    <section class="card" id="socialSection">
+      <h2 class="title">Find me online</h2>
+      <div class="socials" id="socials"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a href="#" onclick="return false">English</a>
+      <a href="#" onclick="return false">Privacy</a>
+      <a href="#" onclick="return false">Terms</a>
+      <a href="mailto:contact@example.com">Contact</a>
+      <a href="#" onclick="return false">Report</a>
+    </div>
+    <div id="footerCredit"></div>
+  </footer>
+  </div>
+
+
+  <section class="profile-page" id="profilePage" style="display:none">
+    <div class="profile-shell">
+      <div class="profile-top">
+        <button class="profile-back" id="profileBackBtn">← Support</button>
+        <button class="profile-back" id="profileLogoutBtn">Logout</button>
+      </div>
+
+      <div class="account-card">
+        <img class="account-avatar" id="accountAvatar" alt="">
+        <h1 class="account-title" id="accountUsername">@username</h1>
+        <div class="account-email" id="accountEmail">email@example.com</div>
+
+        <div class="account-grid">
+          <div class="account-field">
+            <span class="account-label">Username</span>
+            <span class="account-value" id="accountUsernameValue">—</span>
+          </div>
+          <div class="account-field">
+            <span class="account-label">Email</span>
+            <span class="account-value" id="accountEmailValue">—</span>
+          </div>
+          <div class="account-field">
+            <span class="account-label">Age</span>
+            <span class="account-value" id="accountAgeValue">Not added</span>
+          </div>
+          <div class="account-field">
+            <span class="account-label">Gender</span>
+            <span class="account-value" id="accountGenderValue">Not added</span>
+          </div>
+        </div>
+
+        <div class="account-actions">
+          <button class="account-btn primary" id="editProfileBtn" type="button">Edit profile</button>
+          <button class="account-btn" id="changePasswordBtn" type="button">Change password</button>
+        </div>
+
+        <div class="account-edit" id="accountEdit">
+          <label class="label" for="profileUsernameInput">Username</label>
+          <input class="input" id="profileUsernameInput" maxlength="40" placeholder="yourname">
+
+          <label class="label" for="profileAgeInput">Age</label>
+          <input class="input" id="profileAgeInput" type="number" min="13" max="120" placeholder="Your age">
+
+          <label class="label" for="profileGenderInput">Gender</label>
+          <select class="input" id="profileGenderInput">
+            <option value="">Select gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Non-binary">Non-binary</option>
+            <option value="Prefer not to say">Prefer not to say</option>
+          </select>
+
+          <button class="cta" id="saveProfileBtn" type="button">Save profile</button>
+          <div class="account-message" id="profileMessage"></div>
+        </div>
+
+        <div class="account-edit" id="passwordEdit">
+          <label class="label" for="newPasswordInput">New password</label>
+          <input class="input" id="newPasswordInput" type="password" minlength="6" placeholder="At least 6 characters">
+
+          <label class="label" for="confirmPasswordInput">Confirm new password</label>
+          <input class="input" id="confirmPasswordInput" type="password" minlength="6" placeholder="Repeat new password">
+
+          <button class="cta" id="savePasswordBtn" type="button">Update password</button>
+          <div class="account-message" id="passwordMessage"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="auth-page" id="authPage" style="display:none">
+    <button class="auth-back" id="authBack">← Back</button>
+
+    <div class="auth-animation" id="authAnimation">
+      <div class="runner-track">
+        <div class="runner" id="runner">🏃‍♂️</div>
+        <div class="bag" id="bag">💼</div>
+        <div class="key-prop" id="keyProp">🔑</div>
+        <div class="burst-pieces" id="burstPieces">
+          <span class="piece">💵</span>
+          <span class="piece">📄</span>
+          <span class="piece">👕</span>
+          <span class="piece">🧦</span>
+          <span class="piece">✨</span>
+          <span class="piece">📦</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="auth-form-wrap" id="authFormWrap">
+      <div class="auth-card">
+        <div class="brand-mark auth-brand">☕</div>
+        <div class="auth-tabs">
+          <button class="auth-tab active" id="tabSignup" type="button">Sign up</button>
+          <button class="auth-tab" id="tabLogin" type="button">Login</button>
+        </div>
+
+        <form id="signupForm" class="auth-form">
+          <label class="label" for="signupUsername">Username</label>
+          <input class="input" id="signupUsername" placeholder="yourname" autocomplete="username" required>
+          <label class="label" for="signupEmail">Email</label>
+          <input class="input" id="signupEmail" type="email" placeholder="you@example.com" autocomplete="email" required>
+          <label class="label" for="signupPassword">Password</label>
+          <input class="input" id="signupPassword" type="password" placeholder="Create a password" autocomplete="new-password" required>
+          <div class="auth-error" id="signupError"></div>
+          <button class="cta auth-submit" type="submit">Create account</button>
+        </form>
+
+        <form id="loginForm" class="auth-form" style="display:none">
+          <label class="label" for="loginEmail2">Email</label>
+          <input class="input" id="loginEmail2" type="email" placeholder="you@example.com" autocomplete="email" required>
+          <label class="label" for="loginPassword2">Password</label>
+          <input class="input" id="loginPassword2" type="password" placeholder="Password" autocomplete="current-password" required>
+          <div class="auth-error" id="loginError2"></div>
+          <button class="cta auth-submit" type="submit">Login</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <div class="backdrop" id="modal">
+    <div class="modal">
+      <div id="checkout">
+        <h2>Confirm your support</h2>
+        <p>You're about to support <strong id="modalCreator"></strong>.</p>
+        <div class="summary">
+          <div class="row"><span>Amount</span><strong id="modalAmount"></strong></div>
+          <div class="row"><span>Frequency</span><strong id="modalFrequency"></strong></div>
+          <div class="row"><span>Supporter</span><strong id="modalSupporter"></strong></div>
+        </div>
+        <div class="demo">🔒 <strong>Secure payment</strong><br>You'll be redirected to Razorpay to complete your payment safely.</div>
+        <div class="actions">
+          <button class="modal-btn" id="cancel">Cancel</button>
+          <button class="modal-btn primary" id="confirm">Proceed to pay</button>
+        </div>
+      </div>
+      <div class="success" id="success">
+        <div class="success-icon">❤️</div>
+        <h2>Thank you!</h2>
+        <p id="successText"></p>
+        <button class="modal-btn primary" id="done" style="width:100%;margin-top:10px">Done</button>
+      </div>
+    </div>
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+  // =========================================================
+  // SUPABASE CONFIG — project URL detected from your storage link.
+  // Paste your anon/public API key below (Supabase dashboard → Settings → API)
+  // =========================================================
+  const SUPABASE_URL = "https://ifcdrbvimiuxsimajwje.supabase.co";
+  const SUPABASE_ANON_KEY = "sb_publishable_k8Dg9gilBY5TgpDyew0Brg_3qISpJDD";
+  const supabaseClient = (SUPABASE_ANON_KEY && SUPABASE_ANON_KEY !== "PASTE_YOUR_SUPABASE_ANON_KEY_HERE")
+    ? window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
+    : null;
+
+  const creator = {
+    name: "Salman Pathaan",
+    username: "Sallu_Ox",
+    bio: `Knowledge Comes A Cost Hey Guys
+Mera Naam Salman Our Mai 12th Pass Out Hoon But Mujhe Creation, Designing, Our Development, Mai Interest Hai But Na Mujhe Coding Aati Our Na Python Language Par Fir Bhi Sikh Raha Hoon`,
+    profileImage: "https://ifcdrbvimiuxsimajwje.supabase.co/storage/v1/object/public/Profile%20URL/IMG_20260814_074647.jpg",
+    instagram: "https://www.instagram.com/hey_salllu?igsh=NWF6dzRlcTBrMGtu"
+  };
+
+  let selectedAmount = 399;
+  let custom = false;
+
+  // Razorpay payment links mapped to each support amount
+  const paymentLinks = {
+    99:  "https://rzp.io/rzp/L9STXet",
+    149: "https://rzp.io/rzp/Hm5oIcla",
+    399: "https://rzp.io/rzp/pKPOBrE",
+    999: "https://rzp.io/rzp/2wOnb8H"
+  };
+  const supporters = [
+    {name:"John", message:"Thanks for your amazing work!"},
+    {name:"Alex", message:"Keep creating!"}
+  ];
+
+  const $ = id => document.getElementById(id);
+
+  function money(n){
+    const value = Number(n);
+    return "₹" + value.toLocaleString("en-IN", {
+      minimumFractionDigits: Number.isInteger(value) ? 0 : 2,
+      maximumFractionDigits: 2
+    });
+  }
+
+  function currentAmount(){
+    return selectedAmount;
+  }
+
+  function updateButton(){
+    const amount = currentAmount();
+    const text = Number.isFinite(amount) && amount > 0 ? money(amount) : "$0";
+    $("supportBtn").textContent = $("monthly").checked
+      ? `Support ${text} / month`
+      : `Support ${text}`;
+  }
+
+  function renderCreator(){
+    $("profileImage").src = creator.profileImage;
+    $("profileImage").alt = creator.name + " profile photo";
+    $("username").textContent = "@" + creator.username;
+    $("heading").textContent = "Buy " + creator.name + " a coffee";
+    $("aboutTitle").textContent = "About " + creator.name;
+    $("bio").textContent = creator.bio;
+    $("footerCredit").textContent = "Made with ❤️ by " + creator.name;
+    $("modalCreator").textContent = creator.name;
+    $("successText").textContent = "Your support means a lot to " + creator.name + ". Thank you for being part of the journey!";
+
+    const title = creator.name + " — Support My Creative Work";
+    document.title = title;
+    $("pageTitle").textContent = title;
+    $("metaDescription").content = "Support " + creator.name + " and help support their creative work.";
+    $("ogTitle").content = title;
+    $("ogDescription").content = "Support " + creator.name + " and help keep creative work going.";
+    $("ogImage").content = creator.profileImage;
+    $("twitterTitle").content = title;
+    $("twitterDescription").content = "Support " + creator.name + " and help keep creative work going.";
+    $("twitterImage").content = creator.profileImage;
+    $("canonical").href = location.href.split("#")[0];
+  }
+
+  function renderSocials(){
+    const wrap = $("socials");
+    wrap.innerHTML = "";
+    if(!creator.instagram){
+      $("socialSection").style.display = "none";
+      return;
+    }
+    const a = document.createElement("a");
+    a.className = "social";
+    a.href = creator.instagram;
+    a.target = "_blank";
+    a.rel = "noopener noreferrer";
+    a.textContent = "◎ Instagram";
+    wrap.appendChild(a);
+  }
+
+  function renderSupporters(){
+    const wrap = $("supporters");
+    wrap.innerHTML = "";
+    if(!supporters.length){
+      const p = document.createElement("div");
+      p.className = "empty";
+      p.textContent = "Be the first to support " + creator.name + " ❤️";
+      wrap.appendChild(p);
+      return;
+    }
+    supporters.forEach(s => {
+      const item = document.createElement("div");
+      item.className = "supporter";
+      item.innerHTML = "";
+      const n = document.createElement("div");
+      n.className = "supporter-name";
+      n.textContent = s.name;
+      const m = document.createElement("div");
+      m.className = "supporter-message";
+      m.textContent = '"' + s.message + '"';
+      item.append(n,m);
+      wrap.appendChild(item);
+    });
+  }
+
+  function error(msg){
+    $("error").textContent = msg;
+    $("error").style.display = "block";
+  }
+  function clearError(){
+    $("error").textContent = "";
+    $("error").style.display = "none";
+  }
+
+  document.querySelectorAll(".amount").forEach(btn => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll(".amount").forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      selectedAmount = Number(btn.dataset.amount);
+      clearError();
+      updateButton();
+    });
+  });
+
+  $("monthly").addEventListener("change", () => {
+    $("monthlyText").textContent = $("monthly").checked
+      ? "Support " + creator.name + " and be part of " + creator.name + "'s creative journey. Cancel anytime."
+      : "Support the creator every month. Cancel anytime.";
+    updateButton();
+  });
+
+  $("supportBtn").addEventListener("click", () => {
+    const amount = currentAmount();
+    if(!paymentLinks[amount]){
+      error("Please select ₹99, ₹149, ₹399 or ₹999.");
+      return;
+    }
+    $("modalAmount").textContent = money(amount);
+    $("modalFrequency").textContent = $("monthly").checked ? "Monthly" : "One-time";
+    $("modalSupporter").textContent = $("supporterName").value.trim() || "Anonymous supporter";
+    $("checkout").style.display = "block";
+    $("success").style.display = "none";
+    $("modal").classList.add("show");
+  });
+
+  function closeModal(){ $("modal").classList.remove("show"); }
+  $("cancel").onclick = closeModal;
+  $("done").onclick = closeModal;
+  $("modal").addEventListener("click", e => { if(e.target === $("modal")) closeModal(); });
+  document.addEventListener("keydown", e => { if(e.key === "Escape") closeModal(); });
+
+  $("confirm").addEventListener("click", () => {
+    const amount = currentAmount();
+    const link = paymentLinks[amount];
+    if(!link){
+      error("Please select ₹99, ₹149, ₹399 or ₹999.");
+      closeModal();
+      return;
+    }
+    const name = $("supporterName").value.trim() || "Anonymous";
+    const message = $("message").value.trim();
+    const privateMessage = $("privateMessage").checked;
+
+    if(!privateMessage){
+      supporters.unshift({
+        name,
+        message: message || ("Supported " + creator.name + "'s creative work!")
+      });
+      renderSupporters();
+    }
+
+    // Redirect to the actual Razorpay payment page for the selected amount
+    window.location.href = link;
+  });
+
+  let previousPage = "landing";
+
+  function openLogin(){
+    // remember which page we came from so Back works correctly
+    previousPage = $("landingPage").style.display !== "none" ? "landing" : "support";
+    $("landingPage").style.display = "none";
+    $("supportPage").style.display = "none";
+    $("authPage").style.display = "flex";
+    window.scrollTo(0,0);
+    playAuthAnimation();
+  }
+
+  function closeAuth(){
+    $("authPage").style.display = "none";
+    if(previousPage === "landing"){
+      $("landingPage").style.display = "flex";
+    } else {
+      $("supportPage").style.display = "block";
+    }
+    window.scrollTo(0,0);
+  }
+
+  let authTimers = [];
+
+  function resetAuthAnimation(){
+    authTimers.forEach(id => clearTimeout(id));
+    authTimers = [];
+    const runner = $("runner"), bag = $("bag"), key = $("keyProp");
+    runner.className = "runner";
+    bag.className = "bag";
+    key.className = "key-prop";
+    runner.style.transitionDelay = "0s";
+    bag.style.transitionDelay = "0s";
+    runner.style.transitionDuration = "0s";
+    bag.style.transitionDuration = "0s";
+    runner.style.left = "115%";
+    bag.style.left = "115%";
+    document.querySelectorAll("#burstPieces .piece").forEach(p => {
+      p.className = "piece";
+      p.style.transitionDuration = "0s";
+      p.style.setProperty("--tx","0px");
+      p.style.setProperty("--ty","0px");
+      p.style.setProperty("--rot","0deg");
+    });
+    void runner.offsetWidth; // force reflow so the next transition actually animates
+  }
+
+  function playAuthAnimation(){
+    resetAuthAnimation();
+    $("authFormWrap").classList.remove("show");
+    const runner = $("runner"), bag = $("bag"), key = $("keyProp");
+
+    requestAnimationFrame(() => {
+      // Phase 1: enters dragging the bag, slow effortful pull (speed 0.5), stops partway
+      runner.style.transitionDuration = "1.3s";
+      runner.style.transitionTimingFunction = "cubic-bezier(.33,.1,.2,1)";
+      bag.style.transitionDuration = "1.3s";
+      bag.style.transitionTimingFunction = "cubic-bezier(.33,.1,.2,1)";
+      bag.style.transitionDelay = ".12s";
+      runner.classList.add("pulling");
+      runner.style.left = "66%";
+      bag.style.left = "78%";
+    });
+
+    authTimers.push(setTimeout(() => {
+      // Phase 2: pauses to regrip - 1 second rest
+      runner.classList.remove("pulling");
+      runner.classList.add("idle");
+    }, 1350));
+
+    authTimers.push(setTimeout(() => {
+      // Phase 3: pulls again at a slightly different pace (0.4) until reaching centre
+      runner.classList.remove("idle");
+      runner.classList.add("pulling");
+      runner.style.transitionDelay = "0s";
+      bag.style.transitionDelay = "0s";
+      runner.style.transitionDuration = "1.5s";
+      bag.style.transitionDuration = "1.5s";
+      runner.style.left = "50%";
+      bag.style.left = "60%";
+    }, 2350));
+
+    authTimers.push(setTimeout(() => {
+      // Phase 4: arrives, sets the bag down in the centre
+      runner.classList.remove("pulling");
+      runner.style.transitionDuration = ".3s";
+      bag.style.transitionDuration = ".3s";
+      runner.style.left = "54%";
+      bag.style.left = "46%";
+    }, 3900));
+
+    authTimers.push(setTimeout(() => {
+      // Phase 5: pulls a key out of pocket
+      key.classList.add("show");
+    }, 4350));
+
+    authTimers.push(setTimeout(() => {
+      // Phase 6: unlocks / opens the bag
+      bag.classList.add("opening");
+    }, 4750));
+
+    authTimers.push(setTimeout(() => {
+      // Phase 7: bag bursts open - contents fly out in random directions
+      key.classList.remove("show");
+      bag.classList.add("hidden");
+      document.querySelectorAll("#burstPieces .piece").forEach(p => {
+        const angle = Math.random() * Math.PI * 2;
+        const dist = 55 + Math.random() * 95;
+        const tx = Math.cos(angle) * dist;
+        const ty = Math.sin(angle) * dist - 18;
+        const rot = (Math.random() * 360 - 180) + "deg";
+        p.style.transitionDuration = (.6 + Math.random() * .3) + "s";
+        p.style.setProperty("--tx", tx + "px");
+        p.style.setProperty("--ty", ty + "px");
+        p.style.setProperty("--rot", rot);
+        requestAnimationFrame(() => p.classList.add("fly"));
+      });
+      // runner is startled and immediately sprints away
+      runner.classList.remove("idle");
+      runner.classList.add("sprint");
+      runner.style.transitionDuration = ".7s";
+      runner.style.transitionTimingFunction = "ease-in";
+      runner.style.left = "-25%";
+    }, 5150));
+
+    authTimers.push(setTimeout(() => {
+      document.querySelectorAll("#burstPieces .piece").forEach(p => p.classList.add("settle"));
+    }, 5950));
+
+    authTimers.push(setTimeout(() => {
+      $("authFormWrap").classList.add("show");
+    }, 6450));
+  }
+
+  function setAuthTab(tab){
+    const isSignup = tab === "signup";
+    $("tabSignup").classList.toggle("active", isSignup);
+    $("tabLogin").classList.toggle("active", !isSignup);
+    $("signupForm").style.display = isSignup ? "block" : "none";
+    $("loginForm").style.display = isSignup ? "none" : "block";
+  }
+
+  $("loginBtn").onclick = openLogin;
+  $("landingLoginBtn").onclick = openLogin;
+  $("authBack").onclick = closeAuth;
+  $("tabSignup").onclick = () => setAuthTab("signup");
+  $("tabLogin").onclick = () => setAuthTab("login");
+
+  $("signupForm").addEventListener("submit", async e => {
+    e.preventDefault();
+    const username = $("signupUsername").value.trim();
+    const email = $("signupEmail").value.trim();
+    const password = $("signupPassword").value;
+    const err = $("signupError");
+    err.style.color = "#c62828";
+    if(!username || !email || !password){
+      err.textContent = "Username, email aur password sabhi zaroori hain.";
+      err.style.display = "block";
+      return;
+    }
+    if(!supabaseClient){
+      err.textContent = "Supabase abhi connect nahi hai — SUPABASE_ANON_KEY add karein script mein.";
+      err.style.display = "block";
+      return;
+    }
+    err.style.display = "none";
+    const btn = e.target.querySelector(".auth-submit");
+    btn.disabled = true;
+    btn.textContent = "Creating...";
+    const { error: signupErr } = await supabaseClient.auth.signUp({
+      email, password,
+      options: { data: { username } }
+    });
+    btn.disabled = false;
+    btn.textContent = "Create account";
+    if(signupErr){
+      err.style.color = "#c62828";
+      err.textContent = signupErr.message;
+      err.style.display = "block";
+      return;
+    }
+    err.style.color = "#25a95a";
+    err.textContent = "Account create ho gaya! Email confirm karke login karein.";
+    err.style.display = "block";
+    setTimeout(() => setAuthTab("login"), 1200);
+  });
+
+  $("loginForm").addEventListener("submit", async e => {
+    e.preventDefault();
+    const email = $("loginEmail2").value.trim();
+    const password = $("loginPassword2").value;
+    const err = $("loginError2");
+    err.style.color = "#c62828";
+    if(!email || !password){
+      err.textContent = "Email aur password enter karein.";
+      err.style.display = "block";
+      return;
+    }
+    if(!supabaseClient){
+      err.textContent = "Supabase abhi connect nahi hai — SUPABASE_ANON_KEY add karein script mein.";
+      err.style.display = "block";
+      return;
+    }
+    err.style.display = "none";
+    const btn = e.target.querySelector(".auth-submit");
+    btn.disabled = true;
+    btn.textContent = "Logging in...";
+    const { error: loginErr } = await supabaseClient.auth.signInWithPassword({ email, password });
+    btn.disabled = false;
+    btn.textContent = "Login";
+    if(loginErr){
+      err.style.color = "#c62828";
+      err.textContent = loginErr.message;
+      err.style.display = "block";
+      return;
+    }
+
+    err.style.color = "#25a95a";
+    err.textContent = "Login successful! Welcome back.";
+    err.style.display = "block";
+
+    setTimeout(async () => {
+      $("authPage").style.display = "none";
+      await loadAccountProfile();
+      showProfilePage();
+      setActiveNav("profile");
+    }, 700);
+  });
+
+
+
+
+  // ================= APP NAVIGATION =================
+  const appPages = ["homePage","settingsPage","aboutPage","contactPage","profilePage"];
+  function hideAppPages(){
+    appPages.forEach(id => { const el = $(id); if(el) el.style.display = "none"; });
+  }
+  function setActiveNav(name){
+    document.querySelectorAll(".nav-item[data-nav]").forEach(btn => {
+      btn.classList.toggle("active", btn.dataset.nav === name);
+    });
+  }
+  function closeMenu(){
+    $("sideMenu").classList.remove("show");
+    $("navBackdrop").classList.remove("show");
+  }
+  function openMenu(){
+    $("sideMenu").classList.add("show");
+    $("navBackdrop").classList.add("show");
+  }
+  function showAppPage(name){
+    hideAppPages();
+    $("landingPage").style.display = "none";
+    $("supportPage").style.display = "none";
+    $("authPage").style.display = "none";
+
+    if(name === "support"){
+      $("supportPage").style.display = "block";
+    } else if(name === "profile"){
+      loadAccountProfile().then(showProfilePage);
+    } else {
+      $(name + "Page").style.display = "block";
+    }
+    setActiveNav(name);
+    closeMenu();
+    window.scrollTo(0,0);
+  }
+
+  $("menuBtn").onclick = openMenu;
+  $("menuClose").onclick = closeMenu;
+  $("navBackdrop").onclick = closeMenu;
+
+  document.querySelectorAll(".nav-item[data-nav]").forEach(btn => {
+    btn.onclick = () => showAppPage(btn.dataset.nav);
+  });
+
+  $("homeSupportBtn").onclick = () => showAppPage("support");
+  $("homeProfileBtn").onclick = () => showAppPage("profile");
+  $("settingsPasswordBtn").onclick = async () => {
+    await loadAccountProfile();
+    showProfilePage();
+    $("passwordEdit").classList.add("show");
+    $("accountEdit").classList.remove("show");
+  };
+
+  $("settingCompact").onchange = e => {
+    document.body.style.fontSize = e.target.checked ? "15px" : "";
+    localStorage.setItem("compactMode", e.target.checked ? "1" : "0");
+  };
+  $("settingNotifications").onchange = e => localStorage.setItem("notifications", e.target.checked ? "1" : "0");
+  $("settingLanguage").onchange = e => localStorage.setItem("language", e.target.value);
+
+  (function restoreSettings(){
+    $("settingCompact").checked = localStorage.getItem("compactMode") === "1";
+    $("settingNotifications").checked = localStorage.getItem("notifications") !== "0";
+    $("settingLanguage").value = localStorage.getItem("language") || "English";
+    if($("settingCompact").checked) document.body.style.fontSize = "15px";
+  })();
+
+
+  // ================= ACCOUNT PROFILE =================
+  let currentAccountUser = null;
+
+  function setAccountMessage(id, message, ok = false){
+    const el = $(id);
+    el.textContent = message;
+    el.style.color = ok ? "#168a45" : "#c62828";
+    el.classList.add("show");
+  }
+
+  function showProfilePage(){
+    hideAppPages();
+    $("landingPage").style.display = "none";
+    $("supportPage").style.display = "none";
+    $("authPage").style.display = "none";
+    $("profilePage").style.display = "block";
+    window.scrollTo(0,0);
+  }
+
+  function showSupportFromProfile(){
+    hideAppPages();
+    $("profilePage").style.display = "none";
+    $("landingPage").style.display = "none";
+    $("supportPage").style.display = "block";
+    window.scrollTo(0,0);
+  }
+
+  async function loadAccountProfile(){
+    if(!supabaseClient) return;
+    const { data, error } = await supabaseClient.auth.getUser();
+    if(error || !data.user){
+      return;
+    }
+
+    currentAccountUser = data.user;
+    const metadata = data.user.user_metadata || {};
+    const username = metadata.username || data.user.email?.split("@")[0] || "User";
+    const age = metadata.age || "";
+    const gender = metadata.gender || "";
+
+    $("accountAvatar").src = creator.profileImage;
+    $("accountAvatar").alt = username + " profile photo";
+    $("accountUsername").textContent = "@" + username;
+    $("accountEmail").textContent = data.user.email || "";
+    $("accountUsernameValue").textContent = username;
+    $("accountEmailValue").textContent = data.user.email || "—";
+    $("accountAgeValue").textContent = age || "Not added";
+    $("accountGenderValue").textContent = gender || "Not added";
+
+    $("profileUsernameInput").value = username;
+    $("profileAgeInput").value = age;
+    $("profileGenderInput").value = gender;
+
+    $("menuUsername").textContent = "@" + username;
+    $("menuEmail").textContent = data.user.email || "Not logged in";
+    $("menuBrandName").textContent = creator.name;
+    $("homeAvatar").src = creator.profileImage;
+    $("homeAvatar").alt = username + " profile photo";
+    $("homeTitle").textContent = "Welcome, " + username;
+    $("homeSubtitle").textContent = "Manage your profile, discover support tools and stay connected with " + creator.name + ".";
+    $("aboutMeText").textContent = creator.bio;
+  }
+
+  $("loginBtn").onclick = async () => {
+    await loadAccountProfile();
+    showProfilePage();
+  };
+
+  $("profileBackBtn").onclick = showSupportFromProfile;
+
+  $("profileLogoutBtn").onclick = async () => {
+    if(supabaseClient) await supabaseClient.auth.signOut();
+    $("profilePage").style.display = "none";
+    $("supportPage").style.display = "none";
+    $("landingPage").style.display = "flex";
+    currentAccountUser = null;
+    window.scrollTo(0,0);
+  };
+
+  $("editProfileBtn").onclick = () => {
+    $("accountEdit").classList.toggle("show");
+    $("passwordEdit").classList.remove("show");
+    $("profileMessage").classList.remove("show");
+  };
+
+  $("changePasswordBtn").onclick = () => {
+    $("passwordEdit").classList.toggle("show");
+    $("accountEdit").classList.remove("show");
+    $("passwordMessage").classList.remove("show");
+  };
+
+  $("saveProfileBtn").onclick = async () => {
+    if(!supabaseClient) return;
+    const username = $("profileUsernameInput").value.trim();
+    const age = $("profileAgeInput").value.trim();
+    const gender = $("profileGenderInput").value;
+
+    if(!username){
+      setAccountMessage("profileMessage","Username zaroor enter karein.");
+      return;
+    }
+    if(age && (Number(age) < 13 || Number(age) > 120)){
+      setAccountMessage("profileMessage","Age 13 se 120 ke beech honi chahiye.");
+      return;
+    }
+
+    const btn = $("saveProfileBtn");
+    btn.disabled = true;
+    btn.textContent = "Saving...";
+
+    const { data, error } = await supabaseClient.auth.updateUser({
+      data: { username, age: age || null, gender: gender || null }
+    });
+
+    btn.disabled = false;
+    btn.textContent = "Save profile";
+
+    if(error){
+      setAccountMessage("profileMessage", error.message);
+      return;
+    }
+
+    currentAccountUser = data.user;
+    await loadAccountProfile();
+    setAccountMessage("profileMessage","Profile updated successfully.",true);
+  };
+
+  $("savePasswordBtn").onclick = async () => {
+    if(!supabaseClient) return;
+    const password = $("newPasswordInput").value;
+    const confirm = $("confirmPasswordInput").value;
+
+    if(password.length < 6){
+      setAccountMessage("passwordMessage","Password kam se kam 6 characters ka hona chahiye.");
+      return;
+    }
+    if(password !== confirm){
+      setAccountMessage("passwordMessage","Dono passwords match nahi kar rahe.");
+      return;
+    }
+
+    const btn = $("savePasswordBtn");
+    btn.disabled = true;
+    btn.textContent = "Updating...";
+
+    const { error } = await supabaseClient.auth.updateUser({ password });
+
+    btn.disabled = false;
+    btn.textContent = "Update password";
+
+    if(error){
+      setAccountMessage("passwordMessage", error.message);
+      return;
+    }
+
+    $("newPasswordInput").value = "";
+    $("confirmPasswordInput").value = "";
+    setAccountMessage("passwordMessage","Password successfully changed.",true);
+  };
+
+
+  // ================= LANDING PAGE =================
+  function renderLanding(){
+    $("landingAvatar").src = creator.profileImage;
+    $("landingAvatar").alt = creator.name + " profile photo";
+    $("landingTitle").innerHTML =
+      "Support <span>" + creator.name + "</span>";
+    $("landingName").textContent = creator.name;
+    $("landingBio").textContent =
+      "A simple way to support " + creator.name +
+      " and help keep creative ideas, experiments and projects moving.";
+
+    if(creator.instagram){
+      $("landingInstagramBtn").style.display = "block";
+      $("landingInstagramBtn").onclick = () => {
+        window.open(creator.instagram, "_blank", "noopener,noreferrer");
+      };
+    }else{
+      $("landingInstagramBtn").style.display = "none";
+    }
+  }
+
+  function openSupportPage(){
+    $("landingPage").style.display = "none";
+    $("supportPage").style.display = "block";
+    window.scrollTo(0,0);
+  }
+
+  $("startSupportBtn").addEventListener("click", openSupportPage);
+
+
+
+  // Restore an existing Supabase session when the page is opened again.
+  (async () => {
+    if(!supabaseClient) return;
+    const { data } = await supabaseClient.auth.getSession();
+    if(data && data.session && data.session.user){
+      await loadAccountProfile();
+      showProfilePage();
+    }
+  })();
+
+
+  renderCreator();
+  renderLanding();
+  renderSocials();
+  renderSupporters();
+  updateButton();
+</script>
+</body>
+</html>
